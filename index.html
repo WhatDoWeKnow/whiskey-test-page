@@ -48,7 +48,7 @@
                 <section class="callout jumbotron text-center">
                     <h1>The finest whiskey delivered to your doorstep.</h1>
                     <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s class="hidden-xs">£19.99</s> <span class="visible-xs"><br></span> <strong><mark>First one is free!</mark></strong></p>
-                    <p><button class="btn btn-lg btn-success">Sign Up!</button></p>
+                    <p><button class="btn btn-lg btn-success" data-toggle='modal' data-target='#signUpModal'>Sign Up!</button></p>
                     <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
                 </section>
             </div>
@@ -84,10 +84,10 @@
                             <img src="images/eva02.jpg" alt="Picture of Eva01" class="img-circle media-object" height="70" width="70">
                         </div>
                         <div class="media-body">
-                        <blockquote class="quote">
-                            <p>I haven't been sober for months!</p>
-                            <footer>Jane Doe on <cite title="Twitter">Twitter</cite></footer>
-                        </blockquote>
+                            <blockquote class="quote">
+                                <p>I haven't been sober for months!</p>
+                                <footer>Jane Doe on <cite title="Twitter">Twitter</cite></footer>
+                            </blockquote>
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
             <div class="row">
                 <div class="col-xs-12 col-md-6 col-lg-4">
                     <div class="feature">
-                        <h3><span class="glyphicon glyphicon-paperclip hidden-xs"></span>Feature 1<span class="label label-success">New!</span></h3>
+                        <h3><span class="glyphicon glyphicon-glass hidden-xs"></span>Feature 1<span class="label label-success">New!</span></h3>
                         <p>he standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied
                             by English versions from the 1914 translation by H. Rackham</p>
                         <p><a class="btn btn-sm btn-default" href=="">Read More</a></p>
@@ -115,7 +115,7 @@
                 </div>
                 <div class="col-xs-12 col-md-6 col-lg-4">
                     <div class="feature">
-                        <h3><span class="glyphicon glyphicon-paperclip hidden-xs"></span>Feature 2</h3>
+                        <h3><span class="glyphicon glyphicon-glass hidden-xs"></span>Feature 2</h3>
                         <p>he standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied
                             by English versions from the 1914 translation by H. Rackham</p>
                         <p><a class="btn btn-sm btn-default" href=="">Read More</a></p>
@@ -124,7 +124,7 @@
                 <div class="hidden-md hidden-md col-lg-4">
                     <!-- element will be hidden on medium device but visible on large, small and x-small device -->
                     <div class="feature">
-                        <h3><span class="glyphicon glyphicon-paperclip hidden-xs"></span>Feature 3</h3>
+                        <h3><span class="glyphicon glyphicon-glass hidden-xs"></span>Feature 3</h3>
                         <p>he standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied
                             by English versions from the 1914 translation by H. Rackham</p>
                         <p><a class="btn btn-sm btn-default" href=="">Read More</a></p>
@@ -174,8 +174,40 @@
             </div>
         </section>
         <!-- end of table section -->
-
     </article>
+
+    <!-- Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Sign Up For Whiskey Drop!</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <p class="help-block">We'll never share your email address with anyone</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRepeat">Repeat Password</label>
+                            <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Your Password">
+                        </div>
+                        <button type="submit" class="btn btn-success">Sign Up!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>
