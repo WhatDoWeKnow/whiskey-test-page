@@ -1,0 +1,134 @@
+body {
+    /*font-family: 'Amatic SC', cursive; */
+    font-family: 'Sriracha', cursive;
+    font-size: 20px;
+}
+
+.alert-container {}
+
+.collout-container {
+    height: 100vh;
+    
+    background: url("../images/whiskey_001.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    
+    position: relative;
+    
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.quotes-container {}
+
+.features-container {}
+
+/* Navbar */
+
+.navbar {
+    position: absolute;
+    margin-bottom: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
+    border: 0;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border: 0;
+}
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    color: white;
+}
+
+.navbar .navbar-brand:hover {
+    color: white;
+}
+
+.navbar-default .navbar-nav a {
+    font-weight: bold;
+}
+
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+     color: white;
+     background: transparent;   
+}
+
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+}
+
+
+
+
+
+.table-container {}
+
+/* Jumbotorn centre piece */
+
+.jumbotron {
+   background-color: transparent;
+}
+
+.jumbotron h1 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.jumbotron .lead {
+    color: white;
+    margin: 25px 0;
+}
+
+/* Block divider hr */
+
+.block-divider {
+    width: 300px;
+    height: 5px;
+    border: 0px;
+    background-color: #e0d9d9;
+}
+
+/* Button Sign Up */
+
+.btn-cta {
+    border-radius: 23px;
+    width: 150px;
+    background-color: red;
+}
+
+.btn-cta:hover {
+    background-color: orange;
+}

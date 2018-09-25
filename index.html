@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Sriracha" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+
     <title>Whiskey Drop | Taste a new whiskey every month</title>
 </head>
 
@@ -17,45 +21,59 @@
             <!-- Logo -->
             <div class="navbar-header">
                 <a href="/" class="navbar-brand">Whiskey Drop</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
 
             <!-- Navbar -->
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="">About</a></li>
-                <li class="visible-xs"><a href="">Sign In</a></li>
-            </ul>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li class="visible-xs"><a href="">Sign In</a></li>
+                </ul>
 
-            <!-- Message -->
-            <div class="navbar-header navbar-right hidden-xs">
-                <a href="/login" class="btn btn-default navbar-btn">Sign Up!</a>
-                <p class="navbar-text"><i>Great whiskey delivered to your door.</i></p>
+                <!-- Message -->
+                <div class="navbar-header navbar-right hidden-xs">
+                    <a href="/login" class="btn btn-default navbar-btn">Sign Up!</a>
+                    <p class="navbar-text"><i>Great whiskey delivered to your door.</i></p>
+                </div>
             </div>
         </div>
     </nav>
-    <article class="container">
+    <div class="container alert-container">
         <!-- Alert -->
-        <div class="row hidden-xs">
+        <!-- <div class="row hidden-xs">
             <div class="col-xs-12">
                 <div class="alert alert-warning">
                     <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for the price of 6! <a href="/">See here</a> for more details.
                 </div>
             </div>
-        </div>
-        <!-- callout section -->
+        </div> -->
+    </div>
+    <!-- callout section -->
+    <div class="container-fluid collout-container">
+        <div class="opaque-overlay">&rbsp;</div>
         <div class="row">
             <div class="col-xs-12">
                 <section class="callout jumbotron text-center">
                     <h1>The finest whiskey delivered to your doorstep.</h1>
+                    <hr class="block-divider">
                     <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s class="hidden-xs">£19.99</s> <span class="visible-xs"><br></span> <strong><mark>First one is free!</mark></strong></p>
-                    <p><button class="btn btn-lg btn-success" data-toggle='modal' data-target='#signUpModal'>Sign Up!</button></p>
+                    <p><button class="btn btn-lg btn-cta" data-toggle='modal' data-target='#signUpModal'>Sign Up!</button></p>
                     <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
                 </section>
             </div>
         </div>
-        <!-- end of callout section -->
+    </div>
+    <!-- end of callout section -->
 
-        <!-- quotes section -->
+    <!-- quotes section -->
+    <div class="container quotes-container">
         <section class="quotes">
             <div class="row">
                 <div class="col-xs-12">
@@ -93,9 +111,11 @@
                 </div>
             </div>
         </section>
-        <!-- end of quotes section -->
+    </div>
+    <!-- end of quotes section -->
 
-        <!-- features section -->
+    <!-- features section -->
+    <div class="container features-container">
         <section class="features">
             <div class="row">
                 <div class="col-xs-12">
@@ -132,10 +152,11 @@
                 </div>
             </div>
         </section>
-        <!-- end of features section -->
-        <hr>
+    </div>
+    <!-- end of features section -->
 
-        <!-- table section -->
+    <!-- table section -->
+    <div class="container table-container">
         <section class- "favorites">
             <div class="row">
                 <div class="col-xs-12">
@@ -173,8 +194,8 @@
                 </div>
             </div>
         </section>
-        <!-- end of table section -->
-    </article>
+    </div>
+    <!-- end of table section -->
 
     <!-- Modal -->
     <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
